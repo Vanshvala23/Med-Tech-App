@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="SplashScreen"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backgroundlinear">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="90dp"
+            android:src="@drawable/logo"
+            android:id="@+id/logo"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="90dp"
+            android:layout_margin="150dp"
+            android:layout_above="@id/LogoText"
+            />
+        <TextView
+            android:id="@+id/LogoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="MedLink Plus"
+            android:textSize="30sp"
+            android:textColor="#1D7A57"/>
+    </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
